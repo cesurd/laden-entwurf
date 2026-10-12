@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="de" class="ohne-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Schlüsseldienst in Kaarst | HdS Sicherheitsfachgeschäft</title>
+<meta name="description" content="HdS Schlüsseldienst an der Martinusstraße 45 in Kaarst: Schließanlagen, Schlösser, Zylinder, Schlüssel. 02131 792929.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="canonical" href="https://cesurd.github.io/laden-entwurf/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:title" content="Schlüsseldienst in Kaarst | HdS Sicherheitsfachgeschäft">
+<meta property="og:description" content="Schließanlagen, Schlösser, Zylinder und Schlüssel aus dem Fachgeschäft an der Martinusstraße 45 in Kaarst.">
+<meta property="og:url" content="https://cesurd.github.io/laden-entwurf/">
+<meta property="og:image" content="https://cesurd.github.io/laden-entwurf/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="theme-color" content="#2A2B2D">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/fira-sans-condensed-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/fira-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>
+  (function (d) {
+    d.classList.replace('ohne-js', 'js');
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('bewegt');
+  })(document.documentElement);
+</script>
+<style>
+@font-face { font-family: "Fira Sans Condensed"; font-weight: 600; font-display: swap; src: url(assets/fonts/fira-sans-condensed-600-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fira Sans Condensed"; font-weight: 700; font-display: swap; src: url(assets/fonts/fira-sans-condensed-700-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fira Sans Condensed"; font-weight: 800; font-display: swap; src: url(assets/fonts/fira-sans-condensed-800-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fira Sans"; font-weight: 400; font-display: swap; src: url(assets/fonts/fira-sans-400-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fira Sans"; font-weight: 500; font-display: swap; src: url(assets/fonts/fira-sans-500-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fira Sans"; font-weight: 600; font-display: swap; src: url(assets/fonts/fira-sans-600-latin.woff2) format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+:root {
+  --rot: #D02C24;            /* HdS-Rot, vom Ladenschild abgeleitet (dort sonnengebleicht #EE6D67) */
+  --rot-tief: #A8221B;
+  --klinker: #2A2B2D;        /* Klinker im Schatten unter dem Schild */
+  --fuge: #323336;
+  --schild: #FBFBF8;
+  --hell: #F2F2EF;
+  --text: #2A2B2D;
+  --text-2: #55575A;
+  --auf-dunkel: #F1EEE9;
+  --auf-dunkel-2: #C9C4BC;
+  --auf-dunkel-3: #9E988F;
+  --alu-hell: #DADDDF;
+  --alu: #A3A8AC;
+  --alu-dunkel: #7D8287;
+  --licht: 255 238 196;
+  --radius: 8px;
+  --r-flaeche: 10px;
+  --rand: clamp(16px, 4vw, 48px);
+  --max: 1320px;
+  --kopf-h: 64px;
+  --schrift: "Fira Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --schild-schrift: "Fira Sans Condensed", "Arial Narrow", "Fira Sans", sans-serif;
+  --raus: cubic-bezier(.16, 1, .3, 1);
+  --fugen: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='144' height='48'%3E%3Cg fill='%23313235'%3E%3Crect y='22' width='144' height='2'/%3E%3Crect y='46' width='144' height='2'/%3E%3Crect x='70' width='2' height='22'/%3E%3Crect x='142' width='2' height='22'/%3E%3Crect x='34' y='24' width='2' height='22'/%3E%3Crect x='106' y='24' width='2' height='22'/%3E%3C/g%3E%3C/svg%3E");
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: calc(var(--kopf-h) + 12px); scrollbar-color: var(--alu-dunkel) var(--hell); }
+body { margin: 0; background: var(--hell); color: var(--text); font: 400 1.0625rem/1.6 var(--schrift); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: rgba(208, 44, 36, .18); font-variant-numeric: lining-nums; }
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-underline-offset: .2em; text-decoration-thickness: 1px; }
+::selection { background: var(--rot); color: #fff; }
+:focus-visible { outline: 3px solid var(--rot); outline-offset: 3px; }
+.dunkel :focus-visible { outline-color: #fff; }
+h1, h2, h3 { margin: 0; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+.rahmen { width: min(100% - 2 * var(--rand), var(--max)); margin-inline: auto; }
+.sprung { position: absolute; left: 12px; top: -60px; z-index: 50; background: var(--schild); color: var(--text); padding: 10px 16px; border-radius: var(--radius); text-decoration: none; font-weight: 600; }
+.sprung:focus { top: 12px; }
+.icon { width: 20px; height: 20px; flex: none; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Rufnummer im Ziffernsatz des Ladenschilds: Vorwahl klein, Nummer groß */
+.nummer { font-family: var(--schild-schrift); font-weight: 700; color: var(--rot); text-decoration: none; white-space: nowrap; letter-spacing: .01em; line-height: 1; display: inline-flex; align-items: baseline; gap: .22em; }
+.nummer .vorwahl { font-size: max(.56em, 12px); font-weight: 600; letter-spacing: .02em; }
+
+/* ---------- Kopfzeile: das angedockte Schild ---------- */
+.kopf { position: sticky; top: 0; z-index: 40; height: var(--kopf-h); background: var(--schild); color: var(--text); box-shadow: 0 1px 0 var(--alu-hell), 0 10px 24px -14px rgba(20, 21, 23, .55); }
+.kopf::before { content: ""; position: absolute; inset: 0 0 auto; height: 3px; background: linear-gradient(var(--alu-hell), var(--alu)); }
+.kopf::after { content: ""; position: absolute; inset: auto 0 0; height: 2px; background: var(--alu); }
+.kopf-innen { position: relative; height: 100%; display: flex; align-items: center; gap: 20px; }
+.kopf-marke { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); flex: none; }
+.kopf-marke svg { width: 38px; height: auto; }
+.kopf-hds { font-family: var(--schild-schrift); font-weight: 700; font-size: 1.125rem; letter-spacing: .01em; }
+.kopf-titel { font-family: var(--schild-schrift); font-weight: 700; color: var(--rot); font-size: 1.25rem; line-height: .98; white-space: nowrap; letter-spacing: -.012em; padding-left: 20px; border-left: 1px solid var(--alu-hell); }
+.kopf-titel-text { display: inline-block; }
+.kopf-titel .zeile { display: inline; }
+.kopf-nav { margin-left: auto; display: flex; gap: 26px; font-size: .9375rem; font-weight: 500; }
+.kopf-nav a { text-decoration: none; color: var(--text-2); padding-block: 8px; }
+.kopf-tel { font-size: 1.625rem; }
+@media (hover: hover) { .kopf-nav a:hover { color: var(--rot); } .kopf-tel:hover .ruf { text-decoration: underline; text-decoration-thickness: 2px; } }
+@media (max-width: 1023px) {
+  .kopf-nav { display: none; }
+  .kopf-tel { margin-left: auto; font-size: 1.375rem; }
+}
+@media (max-width: 699px) {
+  :root { --kopf-h: 56px; }
+  .kopf-innen { gap: 12px; }
+  .kopf-marke svg { width: 32px; }
+  .kopf-hds { display: none; }
+  .kopf-titel { font-size: 1.0625rem; padding-left: 12px; }
+  .kopf-titel .zeile { display: block; }
+  .kopf-tel { font-size: 1.375rem; }
+}
+@media (max-width: 359px) { .kopf-marke { display: none; } .kopf-titel { padding-left: 0; border-left: 0; } }
+
+/* Mit Bewegung: Kopfzeile erscheint erst, wenn das Schild oben angedockt hat */
+.bewegt .kopf { position: fixed; inset: 0 0 auto; visibility: hidden; }
+.bewegt .kopf.angedockt { visibility: visible; }
+.bewegt .kopf.weich .kopf-innen > * { animation: auftauchen .22s ease-out both; }
+@keyframes auftauchen { from { opacity: 0; } }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; container-type: inline-size; overflow: clip; background-color: var(--klinker);
+  background-image: var(--fugen);
+  --winkel: -3deg; --t-schild: clamp(2.125rem, 12.6cqw, 3.4rem); --t-tel: clamp(1.75rem, 9cqw, 2.4rem); --pad-schild: clamp(14px, 4cqw, 20px);
+  --foto-h: clamp(240px, 46svh, 430px);
+  min-height: clamp(600px, 100svh, 1000px); display: flex; flex-direction: column; color: var(--auf-dunkel); }
+.hero-foto { position: absolute; inset: 0 0 auto; height: var(--foto-h); }
+.hero-foto img { width: 100%; height: 100%; object-fit: cover; object-position: 94% 40%; }
+@media (max-aspect-ratio: 1/1) { .hero-foto img { object-position: 30% 40%; } }
+.hero-foto::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(20, 21, 23, .62) 0%, rgba(20, 21, 23, .18) 30%, rgba(20, 21, 23, 0) 52%); pointer-events: none; }
+
+/* Ohne Ladenfoto (öffentliche Vorschau): die Fassade als Klinkerwand unter den Schildlampen */
+.hero-wand { background-color: #6C685F;
+  background-image: linear-gradient(180deg, rgba(20, 21, 23, .5), rgba(20, 21, 23, .08) 40%, rgba(20, 21, 23, .32)),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='168' height='56'%3E%3Crect width='168' height='56' fill='%236C685F'/%3E%3Crect x='0' y='0' width='82' height='24' fill='%235A564E'/%3E%3Crect x='86' y='0' width='78' height='24' fill='%23524E47'/%3E%3Crect x='0' y='28' width='40' height='24' fill='%23575249'/%3E%3Crect x='44' y='28' width='80' height='24' fill='%235F5A51'/%3E%3Crect x='128' y='28' width='40' height='24' fill='%23545049'/%3E%3C/svg%3E");
+  background-size: auto, 168px 56px; }
+.hero-wand::after { background:
+    radial-gradient(ellipse 17% 85% at 18% 0%, rgb(255 226 170 / .42), rgb(255 226 170 / 0) 72%),
+    radial-gradient(ellipse 17% 85% at 50% 0%, rgb(255 226 170 / .38), rgb(255 226 170 / 0) 72%),
+    radial-gradient(ellipse 17% 85% at 82% 0%, rgb(255 226 170 / .42), rgb(255 226 170 / 0) 72%);
+  mix-blend-mode: screen; opacity: 0; transition: opacity .9s ease-out; }
+.ist-offen .hero-wand::after { opacity: 1; }
+.hero-raum { position: relative; height: calc(var(--foto-h) - var(--schild-halb)); flex: none; }
+.hero-oben { position: relative; z-index: 2; display: flex; justify-content: flex-start; align-items: flex-start; gap: 16px; padding-top: clamp(14px, 2.4cqw, 28px); }
+.status { display: inline-flex; align-items: center; gap: 9px; padding: 8px 14px; border-radius: var(--radius); background: rgba(24, 25, 27, .82); color: #fff; font-size: .875rem; font-weight: 500; line-height: 1.2; white-space: nowrap; }
+
+.lampe { width: 9px; height: 9px; border-radius: 50%; background: var(--alu-dunkel); flex: none; }
+.ist-offen .lampe { background: radial-gradient(circle at 35% 35%, #FFF3C9, #FFC94D 60%); }
+
+/* Das Schildband */
+.schild { position: relative; z-index: 3; flex: none; transform: rotate(var(--winkel)); transform-origin: 50% 0; will-change: transform; }
+.schild-fahrt { position: relative; }
+.schild-flaeche { position: absolute; inset: 0 -7%; transform-origin: 50% 0; background: linear-gradient(180deg, #FFFFFD 0%, var(--schild) 55%, #EEEEEA 100%);
+  box-shadow: inset 0 4px 0 var(--alu-hell), inset 0 6px 0 var(--alu), inset 0 -3px 0 var(--alu), 0 22px 28px -14px rgba(8, 9, 10, .7), 0 6px 10px -6px rgba(8, 9, 10, .5); }
+/* Licht der Schildlampen: an, solange der Laden geöffnet ist */
+.schild-licht { position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .9s ease-out;
+  background:
+    radial-gradient(ellipse 17% 165% at 16% 0%, rgb(var(--licht) / .95), rgb(var(--licht) / 0) 74%),
+    radial-gradient(ellipse 17% 165% at 41% 0%, rgb(var(--licht) / .85), rgb(var(--licht) / 0) 74%),
+    radial-gradient(ellipse 17% 165% at 66% 0%, rgb(var(--licht) / .9), rgb(var(--licht) / 0) 74%),
+    radial-gradient(ellipse 17% 165% at 89% 0%, rgb(var(--licht) / .85), rgb(var(--licht) / 0) 74%); mix-blend-mode: multiply; }
+.schild-schatten { position: absolute; inset: 0; pointer-events: none; background: rgba(46, 48, 52, .17); opacity: var(--lichtfall, 1); transition: opacity .9s ease-out; }
+.ist-offen .schild-licht { opacity: calc(.9 * var(--lichtfall, 1)); }
+.schild-fahrt::after { content: ""; position: absolute; left: -7%; right: -7%; top: 100%; height: clamp(80px, 12cqw, 150px); pointer-events: none; opacity: 0; transition: opacity .9s ease-out;
+  background:
+    radial-gradient(ellipse 13% 100% at 16% 0%, rgb(var(--licht) / .17), rgb(var(--licht) / 0) 75%),
+    radial-gradient(ellipse 13% 100% at 41% 0%, rgb(var(--licht) / .14), rgb(var(--licht) / 0) 75%),
+    radial-gradient(ellipse 13% 100% at 66% 0%, rgb(var(--licht) / .15), rgb(var(--licht) / 0) 75%),
+    radial-gradient(ellipse 13% 100% at 89% 0%, rgb(var(--licht) / .14), rgb(var(--licht) / 0) 75%); }
+.ist-offen .schild-fahrt::after { opacity: var(--lichtfall, 1); }
+.ist-offen .schild-schatten { opacity: 0; }
+.schild-innen { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding-block: var(--pad-schild); }
+.schild-titel { font-family: var(--schild-schrift); font-weight: 700; color: var(--rot); font-size: var(--t-schild); line-height: .98; letter-spacing: -.012em; transform-origin: 0 50%; }
+.schild-titel .zeile { display: block; }
+.schild-tel { font-size: var(--t-tel); transform-origin: 100% 50%; }
+@media (hover: hover) { .schild-tel:hover .ruf { text-decoration: underline; text-decoration-thickness: 3px; } }
+
+.hero-unten { position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; gap: 20px; padding-top: calc(4cqw + 22px); padding-bottom: 28px; }
+.hero-zeile { font-size: 1.0625rem; line-height: 1.55; color: var(--auf-dunkel); max-width: 38ch; }
+.knoepfe { display: flex; flex-wrap: wrap; gap: 12px; }
+.knopf { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: .85rem 1.5rem; border-radius: var(--radius); font-weight: 600; font-size: 1rem; line-height: 1.1; text-decoration: none; white-space: nowrap; transition: background-color .2s ease, border-color .2s ease, transform .2s var(--raus); }
+.knopf-rot { background: linear-gradient(180deg, #D8342C, var(--rot)); color: #fff; box-shadow: 0 10px 18px -10px rgba(0, 0, 0, .55), inset 0 1px 0 rgba(255, 255, 255, .18); }
+.knopf-rot .nummer-text { font-family: var(--schild-schrift); font-weight: 700; font-size: 1.1875rem; letter-spacing: .02em; }
+.knopf-linie { border: 1.5px solid rgba(241, 238, 233, .55); color: var(--auf-dunkel); }
+@media (hover: hover) {
+  .knopf-rot:hover { background: linear-gradient(180deg, #C92E26, var(--rot-tief)); transform: translateY(-1px); }
+  .knopf-linie:hover { border-color: var(--auf-dunkel); background: rgba(241, 238, 233, .06); }
+}
+.fakten { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: .9375rem; color: var(--auf-dunkel-2); }
+.fakten li { display: inline-flex; align-items: center; gap: 8px; }
+.fakten a { color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+@media (hover: hover) { .fakten a:hover { color: var(--auf-dunkel); text-decoration: underline; } }
+.stern { width: 15px; height: 15px; fill: #F2B544; stroke: none; }
+.p-zeichen { display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 3px; background: #2D63B8; color: #fff; font: 700 .75rem/1 var(--schrift); }
+.bildnachweis { font-size: .75rem; line-height: 1.4; color: var(--auf-dunkel-3); }
+.hero .bildnachweis { position: absolute; right: var(--rand); bottom: 10px; z-index: 2; }
+
+@media (max-width: 559px) {
+  .knoepfe .knopf { flex: 1 1 100%; }
+  .hero-unten { gap: 18px; padding-bottom: 34px; }
+}
+@media (min-width: 700px) {
+  .hero { --winkel: -4deg; --t-schild: clamp(3rem, 7.4cqw, 4.5rem); --t-tel: clamp(2.5rem, 6cqw, 3.5rem); --pad-schild: clamp(18px, 2.6cqw, 26px);
+    --foto-h: clamp(280px, min(100svh - 330px, 56svh), 620px); }
+  .schild-innen { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between; column-gap: 32px; row-gap: 6px; }
+  .schild-titel .zeile { display: inline; }
+  .hero-unten { padding-top: calc(4.2cqw + 26px); }
+}
+@media (min-width: 1024px) {
+  .hero { --winkel: -4.5deg; --t-schild: clamp(3.25rem, 5.15cqw, 5.75rem); --t-tel: var(--t-schild); --pad-schild: clamp(20px, 2cqw, 30px);
+    --foto-h: clamp(280px, min(100svh - 300px, 58svh), 640px); }
+  .schild-innen { flex-wrap: nowrap; }
+  .hero-unten { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; column-gap: 40px; row-gap: 18px; padding-top: calc(4.5cqw + 26px); padding-bottom: 40px; }
+  .hero-zeile { grid-column: 1; font-size: 1.1875rem; max-width: 50ch; }
+  .fakten { grid-column: 1; grid-row: 2; }
+  .hero-unten .knoepfe { grid-column: 2; grid-row: 1 / span 2; align-self: end; justify-content: flex-end; }
+  .hero .bildnachweis { bottom: 14px; }
+}
+@media (min-width: 1024px) and (max-height: 720px) { .hero-zeile { font-size: 1.0625rem; } .hero-unten { padding-bottom: 30px; row-gap: 12px; } }
+/* halbe Schildhöhe, damit die Mitte des Bands auf der Fotokante liegt */
+.hero { --schild-halb: calc((var(--t-schild) * 2 * .98 + var(--t-tel) + 8px + 2 * var(--pad-schild)) / 2); }
+@media (min-width: 700px) { .hero { --schild-halb: calc((var(--t-schild) * .98 + var(--t-tel) + 6px + 2 * var(--pad-schild)) / 2); } }
+@media (min-width: 1024px) { .hero { --schild-halb: calc((var(--t-schild) + 2 * var(--pad-schild)) / 2); } }
+/* Ohne Bewegung oder ohne JS beginnt die Seite unter der festen Kopfzeile */
+html:not(.bewegt) .hero { min-height: clamp(560px, calc(100svh - var(--kopf-h)), 940px); }
+
+/* Lade-Choreografie */
+@media (prefers-reduced-motion: no-preference) {
+  .bewegt .hero-foto img { animation: foto-setzen 1.4s var(--raus) both; }
+  .bewegt .hero-foto::before { content: ""; position: absolute; inset: 0; z-index: 1; background: #141517; animation: aufblenden 1s ease-out both; pointer-events: none; }
+  .bewegt .schild-fahrt { animation: schild-einfahren .52s cubic-bezier(.2, 1.12, .32, 1) .04s both; }
+  .bewegt .status { animation: auftauchen .5s ease-out .35s both; }
+  .bewegt .hero-zeile { animation: hoch .6s var(--raus) .42s both; }
+  .bewegt .knoepfe { animation: hoch .6s var(--raus) .5s both; }
+  .bewegt .fakten { animation: hoch .6s var(--raus) .58s both; }
+  .bewegt .schild-licht { transition-delay: .55s; }
+}
+@keyframes foto-setzen { from { transform: scale(1.07); } }
+@keyframes aufblenden { from { opacity: .75; } to { opacity: 0; } }
+@keyframes schild-einfahren { from { transform: translateX(105%); } }
+@keyframes hoch { from { opacity: 0; transform: translateY(14px); } }
+
+/* ---------- Der Laden ---------- */
+.laden { background: var(--hell); padding-bottom: clamp(56px, 8vw, 104px); }
+.laden-band { background: var(--rot); color: #fff; }
+.laden-band .rahmen { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 32px; padding-block: clamp(26px, 4vw, 44px); }
+.laden-band h2 { font-family: var(--schild-schrift); font-weight: 700; font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1; letter-spacing: -.01em; }
+.laden-band p { font-size: 1.0625rem; max-width: 46ch; color: #fff; }
+.laden-raster { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: clamp(28px, 4vw, 56px); margin-top: clamp(40px, 6vw, 64px); }
+.laden-raster h3 { font-family: var(--schild-schrift); font-weight: 700; font-size: 1.5rem; line-height: 1.1; margin-bottom: 14px; padding-top: 14px; border-top: 3px solid var(--rot); }
+.zeiten { position: relative; align-self: start; background: linear-gradient(180deg, #FFFFFD, var(--schild) 50%, #F0F0EC); padding: clamp(22px, 3vw, 36px);
+  box-shadow: inset 0 3px 0 var(--alu-hell), inset 0 5px 0 var(--alu), inset 0 -3px 0 var(--alu), 0 26px 40px -26px rgba(20, 21, 23, .6), 0 4px 10px -6px rgba(20, 21, 23, .35); }
+.zeiten::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .9s ease-out; mix-blend-mode: multiply;
+  background: radial-gradient(ellipse 34% 75% at 22% 0%, rgb(var(--licht) / .95), rgb(var(--licht) / 0) 72%), radial-gradient(ellipse 34% 75% at 78% 0%, rgb(var(--licht) / .9), rgb(var(--licht) / 0) 72%); }
+.zeiten::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: rgba(46, 48, 52, .07); transition: opacity .9s ease-out; }
+.ist-offen .zeiten::before { opacity: .9; }
+.ist-offen .zeiten::after { opacity: 0; }
+.zeiten > * { position: relative; z-index: 1; }
+.laden-raster .zeiten h3 { border-top: 0; padding-top: 0; }
+.zeiten-status { display: flex; align-items: center; gap: 9px; font-weight: 600; margin-bottom: 12px; }
+.zeiten table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.zeiten th, .zeiten td { text-align: left; padding: 11px 0; border-bottom: 1px solid #DCDCD7; font-weight: 400; font-size: 1.0625rem; }
+.zeiten tr:last-child th, .zeiten tr:last-child td { border-bottom: 0; }
+.zeiten td { white-space: nowrap; padding-left: 12px; }
+@media (max-width: 699px) { .zeiten { padding: 20px 16px; } .zeiten th, .zeiten td { font-size: 1rem; } .laden .zeiten tr.heute th::after { display: block; width: fit-content; margin: 5px 0 0; } }
+.zeiten td { text-align: right; }
+.zeiten tr.heute th, .zeiten tr.heute td { font-weight: 700; color: var(--text); }
+.zeiten tr.heute th::after { content: "heute"; margin-left: 8px; padding: 2px 7px; border-radius: 4px; background: var(--text); color: #fff; font-size: .75rem; font-weight: 600; vertical-align: 2px; }
+address { font-style: normal; line-height: 1.55; }
+.kontakt-zeilen { margin: 12px 0 18px; line-height: 1.75; }
+.kontakt-zeilen a { color: var(--rot-tief); font-weight: 600; }
+.laden .knoepfe { gap: 10px; }
+.knopf-dunkel { border: 1.5px solid var(--text); color: var(--text); }
+@media (hover: hover) { .knopf-dunkel:hover { background: var(--text); color: #fff; } }
+.zweiter { margin-top: 22px; padding-top: 14px; border-top: 1px solid #D6D6D1; font-size: .9375rem; color: var(--text-2); }
+
+.sr { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.abschnitt-titel { font-family: var(--schild-schrift); font-weight: 700; font-size: clamp(2rem, 4.2vw, 3.25rem); line-height: 1.02; letter-spacing: -.012em; }
+
+/* ---------- Leistungen: die Tafel am Laden, an derselben Klinkerwand ---------- */
+.leistungen { background: var(--klinker) var(--fugen); padding-block: clamp(36px, 6vw, 88px) clamp(56px, 8vw, 112px); }
+.tafel { background: linear-gradient(180deg, #FFFFFD, var(--schild) 40%, #F0F0EC); color: var(--text); padding: clamp(22px, 4.5vw, 64px);
+  box-shadow: inset 0 3px 0 var(--alu-hell), inset 0 5px 0 var(--alu), inset 0 -3px 0 var(--alu), 0 30px 44px -26px rgba(0, 0, 0, .8), 0 6px 12px -6px rgba(0, 0, 0, .5); }
+.tafel-kopf { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: clamp(24px, 4vw, 56px); row-gap: 10px; align-items: end; padding-bottom: clamp(22px, 3vw, 34px); }
+.tafel-marke { grid-row: span 2; align-self: center; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.tafel-marke svg { width: 88px; }
+.tafel-marke span { font: 600 .875rem/1.2 var(--schild-schrift); letter-spacing: .02em; border-block: 2px solid var(--rot); padding: 4px 6px; white-space: nowrap; }
+.tafel h2 { font-family: var(--schild-schrift); font-weight: 700; font-size: clamp(2.25rem, 5vw, 4rem); line-height: 1; letter-spacing: -.014em; }
+.tafel-zeile { color: var(--text-2); max-width: 58ch; }
+.tafel-liste { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); column-gap: clamp(28px, 4vw, 56px); }
+.tafel-liste > li { position: relative; padding: 22px 0 26px 34px; border-top: 1px solid #DCDCD7; }
+.tafel-liste > li::before { content: ""; position: absolute; left: 0; top: 30px; width: 22px; height: 13px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 56'%3E%3Cpath d='M5 53 50 8l45 45' fill='none' stroke='%232A2B2D' stroke-width='9' stroke-miterlimit='10'/%3E%3Cpath d='M27 53 50 30l23 23Z' fill='%23D02C24'/%3E%3C/svg%3E") no-repeat center / contain; }
+.tafel-liste h3 { font-family: var(--schild-schrift); font-weight: 700; font-size: clamp(1.5rem, 2.3vw, 1.875rem); line-height: 1.1; margin-bottom: 8px; }
+.tafel-liste p { color: var(--text-2); max-width: 52ch; }
+.tafel-liste a { display: inline-block; margin-top: 10px; color: var(--rot-tief); font-weight: 600; }
+.tafel-liste > li.tafel-ruf { background: var(--rot); color: #fff; padding: 24px 26px 26px; border-top: 0; margin-block: 14px; align-self: start; }
+.tafel-liste > li.tafel-ruf::before { display: none; }
+.tafel-ruf p { color: #fff; }
+.tafel-ruf-frage { font: 700 1.375rem/1.1 var(--schild-schrift); }
+.tafel-liste .tafel-ruf-nummer { color: #fff; font-size: clamp(2.25rem, 3.4vw, 2.75rem); margin: 10px 0 8px; }
+.tafel-marken { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; margin-top: clamp(18px, 3vw, 30px); padding-top: 16px; border-top: 2px solid var(--rot); }
+.tafel-marken span { font-size: .9375rem; color: var(--text-2); margin-right: 4px; }
+.tafel-marken b { font: 700 1.25rem/1 var(--schild-schrift); letter-spacing: .05em; }
+@media (hover: hover) { .tafel-liste a:hover { color: var(--rot); } .tafel-ruf-nummer:hover .ruf { text-decoration: underline; text-decoration-thickness: 2px; } }
+@media (max-width: 1023px) {
+  .tafel-kopf { grid-template-columns: minmax(0, 1fr); }
+  .tafel-marke { display: none; }
+}
+@media (max-width: 699px) {
+  .tafel-liste > li { padding-left: 30px; }
+  .tafel-marken span { flex-basis: 100%; }
+}
+
+/* ---------- Der Unterschied: ohne Schlüsseldienst / mit HdS ---------- */
+.vergleich { background: #E8E8E4; padding-block: clamp(64px, 9vw, 120px); }
+.vergleich-kopf { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px 40px; margin-bottom: clamp(26px, 4vw, 44px); }
+.vergleich-kopf h2 { font-family: var(--schild-schrift); font-weight: 700; font-size: clamp(2rem, 4.2vw, 3.25rem); line-height: 1.02; letter-spacing: -.012em; }
+.vergleich-kopf p { color: var(--text-2); max-width: 40ch; }
+.vergleich-tafel { position: relative; }
+/* die Spalte „Mit HdS“ ist ein Schild: Schildweiß, Alu-Kante, Licht wie am Laden */
+.vergleich-tafel::before { content: ""; position: absolute; top: 0; bottom: 0; left: 60%; right: 0; background: linear-gradient(180deg, #FFFFFD, var(--schild) 45%, #F0F0EC);
+  box-shadow: inset 0 3px 0 var(--alu-hell), inset 0 5px 0 var(--alu), inset 0 -3px 0 var(--alu), 0 30px 44px -26px rgba(20, 21, 23, .55), 0 4px 10px -6px rgba(20, 21, 23, .3); }
+.vergleich-tafel::after { content: ""; position: absolute; top: 0; left: 60%; right: 0; height: 60%; pointer-events: none; opacity: 0; transition: opacity .9s ease-out; mix-blend-mode: multiply;
+  background: radial-gradient(ellipse 30% 70% at 25% 0%, rgb(var(--licht) / .9), rgb(var(--licht) / 0) 72%), radial-gradient(ellipse 30% 70% at 75% 0%, rgb(var(--licht) / .85), rgb(var(--licht) / 0) 72%); }
+.ist-offen .vergleich-tafel::after { opacity: .85; }
+.vergleich-tabelle { position: relative; z-index: 1; width: 100%; border-collapse: collapse; table-layout: fixed; }
+.sp-lage { width: 22%; } .sp-ohne { width: 38%; } .sp-mit { width: 40%; }
+.vergleich-tabelle thead th { font-family: var(--schild-schrift); font-weight: 700; font-size: 1.375rem; line-height: 1.1; text-align: left; padding: 30px 0 16px; }
+.vergleich-tabelle thead th.ohne { color: var(--text-2); padding-left: 30px; }
+.vergleich-tabelle thead th.mit { color: var(--rot); padding-left: 66px; }
+.vergleich-tabelle tbody th { font-family: var(--schild-schrift); font-weight: 700; font-size: 1.25rem; line-height: 1.2; text-align: left; vertical-align: top; padding: 22px 20px 22px 0; border-top: 1px solid #CFCFCA; }
+.vergleich-tabelle td { position: relative; vertical-align: top; padding: 22px 28px 22px 30px; line-height: 1.5; }
+.vergleich-tabelle td.ohne { color: #4E5054; border-top: 1px solid #CFCFCA; }
+.vergleich-tabelle td.ohne::before { content: ""; position: absolute; left: 0; top: 33px; width: 16px; height: 4px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 4'%3E%3Crect width='18' height='3' y='.5' fill='%238A8C90'/%3E%3C/svg%3E") no-repeat center / contain; }
+.vergleich-tabelle td.mit { color: var(--text); padding-left: 66px; border-top: 1px solid #E2E2DD; }
+.vergleich-tabelle td.mit::before { content: ""; position: absolute; left: 30px; top: 30px; width: 22px; height: 13px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 56'%3E%3Cpath d='M5 53 50 8l45 45' fill='none' stroke='%232A2B2D' stroke-width='9' stroke-miterlimit='10'/%3E%3Cpath d='M27 53 50 30l23 23Z' fill='%23D02C24'/%3E%3C/svg%3E") no-repeat center / contain; transition: transform .45s var(--raus), opacity .3s; }
+.vergleich-tabelle tbody tr:last-child td.mit { padding-bottom: 34px; }
+.vergleich-tabelle td.mit a { color: var(--rot-tief); font-weight: 600; white-space: nowrap; }
+.vergleich-etikett { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .bewegt .vergleich-tafel:not(.an) td.mit::before { transform: translateY(8px) scale(.5); opacity: 0; }
+  .bewegt .vergleich-tafel tr:nth-child(2) td.mit::before { transition-delay: .08s; }
+  .bewegt .vergleich-tafel tr:nth-child(3) td.mit::before { transition-delay: .16s; }
+  .bewegt .vergleich-tafel tr:nth-child(4) td.mit::before { transition-delay: .24s; }
+  .bewegt .vergleich-tafel tr:nth-child(5) td.mit::before { transition-delay: .32s; }
+}
+@media (max-width: 1023px) {
+  .sp-lage { width: 20%; }
+  .vergleich-tabelle td { padding-right: 18px; }
+  .vergleich-tabelle thead th.mit, .vergleich-tabelle td.mit { padding-left: 52px; }
+  .vergleich-tabelle td.mit::before { left: 20px; }
+}
+@media (max-width: 699px) {
+  .vergleich-tafel::before, .vergleich-tafel::after { display: none; }
+  .vergleich-tabelle, .vergleich-tabelle tbody, .vergleich-tabelle tr, .vergleich-tabelle th, .vergleich-tabelle td { display: block; width: auto; }
+  .vergleich-tabelle thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .vergleich-tabelle tbody tr { margin-bottom: 26px; }
+  .vergleich-tabelle tbody th { padding: 14px 0 10px; border-top: 2px solid var(--text); font-size: 1.375rem; }
+  .vergleich-etikett { display: block; font: 700 .875rem/1.2 var(--schild-schrift); letter-spacing: .02em; margin-bottom: 3px; }
+  .vergleich-tabelle td.ohne { border-top: 0; padding: 0 0 14px 28px; }
+  .vergleich-tabelle td.ohne .vergleich-etikett { color: var(--text-2); }
+  .vergleich-tabelle td.ohne::before { top: 8px; }
+  .vergleich-tabelle td.mit { border-top: 0; padding: 18px 16px 18px 52px; background: linear-gradient(180deg, #FFFFFD, var(--schild) 45%, #F0F0EC);
+    box-shadow: inset 0 3px 0 var(--alu-hell), inset 0 5px 0 var(--alu), inset 0 -3px 0 var(--alu), 0 18px 28px -18px rgba(20, 21, 23, .5); }
+  .vergleich-tabelle tbody tr:last-child td.mit { padding-bottom: 18px; }
+  .vergleich-tabelle td.mit::before { left: 18px; top: 24px; }
+  .vergleich-tabelle td.mit .vergleich-etikett { color: var(--rot); }
+}
+
+/* ---------- Schließplan ---------- */
+.plan-abschnitt { background: var(--hell); padding-block: clamp(64px, 9vw, 124px); border-top: 1px solid #DADAD5; }
+.plan-raster { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); grid-template-areas: "kopf blatt" "rest blatt"; column-gap: clamp(32px, 5vw, 80px); row-gap: 0; align-items: start; }
+.plan-kopf { grid-area: kopf; }
+.plan-rest { grid-area: rest; }
+.blatt { grid-area: blatt; }
+.plan-kopf h2 { font-family: var(--schild-schrift); font-weight: 700; font-size: clamp(2rem, 4.2vw, 3.25rem); line-height: 1.02; letter-spacing: -.012em; margin-bottom: 18px; }
+.plan-vorspann { font-size: 1.125rem; max-width: 46ch; }
+.plan-hinweis { display: none; }
+.js .plan-hinweis { display: flex; align-items: center; gap: 10px; margin-top: 16px; color: var(--rot-tief); font-weight: 600; }
+.arten { margin: 28px 0 30px; display: grid; gap: 14px; }
+.arten div { padding-top: 12px; border-top: 1px solid #D6D6D1; }
+.arten dt { font: 700 1.1875rem/1.2 var(--schild-schrift); }
+.arten dd { margin: 4px 0 0; color: var(--text-2); }
+.plan-ruf { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.plan-ruf p { font-weight: 500; max-width: 30ch; }
+.blatt { margin: 0; align-self: start; background: #fff; box-shadow: 0 34px 50px -34px rgba(20, 21, 23, .6), 0 2px 6px rgba(20, 21, 23, .12); }
+.blatt-kopf { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; padding: 14px clamp(14px, 2vw, 22px); background: var(--rot); color: #fff; }
+.blatt-kopf svg { width: 40px; }
+.blatt-kopf > span:first-of-type { font: 700 1.375rem/1 var(--schild-schrift); letter-spacing: .01em; }
+.blatt-art { margin-left: auto; font-size: .875rem; }
+.blatt-tabelle { padding: 6px clamp(8px, 1.6vw, 18px) 0; }
+.plan { border-collapse: collapse; width: 100%; table-layout: fixed; }
+.plan th, .plan td { border-bottom: 1px solid #E2E2DD; }
+.plan thead th { font: 600 .9375rem/1.1 var(--schild-schrift); color: var(--text-2); padding: 14px 4px 12px; text-align: center; vertical-align: bottom; border-bottom: 2px solid var(--text); transition: color .2s, box-shadow .2s; }
+.plan thead th.plan-ecke { width: 34%; text-align: left; padding-left: 0; }
+.plan thead th.an { color: var(--rot); box-shadow: inset 0 -4px 0 var(--rot); }
+.plan tbody th { padding: 0; font-weight: 400; text-align: left; }
+.plan-schluessel { -webkit-appearance: none; appearance: none; background: none; border: 0; margin: 0; width: 100%; min-height: 48px; padding: 10px 8px 10px 30px; text-align: left; font: 700 1rem/1.15 var(--schild-schrift); color: var(--text); cursor: pointer; position: relative; border-radius: 0; }
+.plan-schluessel::before { content: ""; position: absolute; left: 4px; top: 50%; width: 18px; height: 10px; margin-top: -5px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 10'%3E%3Ccircle cx='5' cy='5' r='3.6' fill='none' stroke='%232A2B2D' stroke-width='1.8'/%3E%3Cpath d='M8.6 5H17M14 5v3M16.4 5v2.4' fill='none' stroke='%232A2B2D' stroke-width='1.8'/%3E%3C/svg%3E") no-repeat; }
+.plan td { position: relative; height: 48px; border-left: 1px solid #EEEEEA; transition: background-color .2s; }
+.plan td.x::before, .plan td.x::after { content: ""; position: absolute; left: 50%; top: 50%; width: 16px; height: 2.5px; background: var(--text); transform: translate(-50%, -50%) rotate(var(--dreh)); transition: background-color .2s, opacity .2s; }
+.plan td.x::before { --dreh: 45deg; }
+.plan td.x::after { --dreh: -45deg; }
+.plan.hat-wahl tbody tr:not(.gewaehlt) td.x::before, .plan.hat-wahl tbody tr:not(.gewaehlt) td.x::after { opacity: .28; }
+.plan.hat-wahl tbody tr:not(.gewaehlt) .plan-schluessel { color: var(--text-2); font-weight: 600; }
+.plan tr.gewaehlt td, .plan tr.gewaehlt th { background: #FBEAE8; }
+.plan tr.gewaehlt td.x::before, .plan tr.gewaehlt td.x::after { background: var(--rot); width: 20px; height: 3px; }
+.plan tr.gewaehlt .plan-schluessel { color: var(--rot-tief); }
+.plan-ergebnis { padding: 14px clamp(14px, 2vw, 22px) 18px; font-weight: 600; min-height: 3.6em; }
+@media (hover: hover) { .plan-schluessel:hover { color: var(--rot); } }
+@keyframes stempel { from { transform: translate(-50%, -50%) rotate(var(--dreh)) scale(2.2); opacity: 0; } }
+@media (prefers-reduced-motion: no-preference) {
+  .bewegt .plan.stempeln tr.gewaehlt td.x::before, .bewegt .plan.stempeln tr.gewaehlt td.x::after { animation: stempel .38s var(--raus) both; animation-delay: calc(var(--i, 0) * 70ms); }
+}
+@media (min-width: 1024px) { .blatt { position: sticky; top: calc(var(--kopf-h) + 28px); } }
+@media (max-width: 1023px) { .plan-raster { grid-template-columns: minmax(0, 1fr); grid-template-areas: "kopf" "blatt" "rest"; row-gap: 28px; } .arten { margin-top: 0; } }
+@media (max-width: 699px) {
+  .plan thead th:not(.plan-ecke) span { writing-mode: vertical-rl; transform: rotate(180deg); display: inline-block; white-space: nowrap; }
+  .plan thead th { padding: 10px 0 10px; font-size: .875rem; }
+  .plan thead th.plan-ecke { width: 33%; vertical-align: bottom; }
+  .plan td { height: 46px; }
+  .plan-schluessel { font-size: .9375rem; padding: 8px 4px 8px 26px; }
+  .plan-schluessel::before { left: 2px; width: 16px; }
+  .blatt-art { margin-left: 0; flex-basis: 100%; }
+}
+
+/* ---------- Stimmen ---------- */
+/* Eine gebaute Tafel an der Klinkerwand: links das rote Wertungsfeld, rechts das Schildweiß mit den Zitaten.
+   Beide Felder sind gleich hoch, die Alu-Kante läuft über die ganze Tafel. Offen: Lampenlicht auf der Tafel, geschlossen liegt sie im Schatten. */
+.stimmen { background: var(--klinker) var(--fugen); color: var(--auf-dunkel); padding-block: clamp(56px, 8vw, 104px); }
+.kst { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  box-shadow: 0 44px 64px -32px rgba(0, 0, 0, .85), 0 10px 18px -10px rgba(0, 0, 0, .55); transition: box-shadow .9s ease-out; }
+.ist-offen .kst { box-shadow: 0 -24px 80px -20px rgb(255 214 150 / .22), 0 44px 64px -32px rgba(0, 0, 0, .85), 0 10px 18px -10px rgba(0, 0, 0, .55); }
+.kst::before { content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; box-shadow: inset 0 3px 0 var(--alu-hell), inset 0 5px 0 var(--alu), inset 0 -3px 0 var(--alu); }
+
+/* Wertungsfeld: HdS-Rot trägt die ganze Fläche */
+.kst-wertung { position: relative; display: flex; flex-direction: column; padding: clamp(28px, 3.6vw, 52px) clamp(22px, 3.6vw, 52px) clamp(26px, 3.4vw, 48px); background: linear-gradient(180deg, #D5302A, var(--rot) 45%, #C62922); color: #fff; }
+.kst-wertung h2 { font-family: var(--schild-schrift); font-weight: 700; font-size: clamp(2rem, 3.5vw, 3.25rem); line-height: 1; letter-spacing: -.012em; color: #fff; }
+.kst-zahlblock { container-type: inline-size; margin-top: auto; padding-top: clamp(26px, 3.4vw, 44px); }
+.kst-zahl { display: grid; grid-template-columns: auto auto; justify-content: start; align-items: end; column-gap: clamp(12px, 4cqi, 22px); font-family: var(--schild-schrift); font-weight: 700; }
+.kst-ziffer { font-size: clamp(5rem, 44cqi, 12rem); line-height: .8; letter-spacing: -.025em; transition: text-shadow .9s ease-out; }
+.ist-offen .kst-ziffer { text-shadow: 0 3px 0 rgba(110, 16, 12, .38), 0 10px 18px rgba(110, 16, 12, .25); }
+.kst-von { display: block; font-size: clamp(.9375rem, 5.6cqi, 1.5rem); line-height: 1.08; letter-spacing: .005em; padding-bottom: .08em; }
+.kst-von > span:last-child { display: block; }
+.kst-sterne { position: relative; display: flex; width: fit-content; margin-bottom: clamp(10px, 3cqi, 16px); --s: clamp(18px, 6.2cqi, 30px); --g: clamp(3px, 1cqi, 5px); }
+.kst-sterne > span { display: flex; gap: var(--g); }
+.kst-sterne svg { width: var(--s); height: var(--s); flex: none; }
+.kst-sterne-grund svg { fill: rgba(255, 255, 255, .3); }
+.kst-sterne-voll { position: absolute; inset: 0 auto 0 0; overflow: hidden; width: calc(4 * (var(--s) + var(--g)) + .6 * var(--s)); } /* 4 volle + 0,6 eines Sterns */
+.kst-sterne-voll svg { fill: #fff; }
+.kst-fuss { margin-top: clamp(22px, 2.8vw, 34px); padding-top: 16px; border-top: 1px solid rgba(255, 255, 255, .45); }
+.kst-fuss p { font-size: .9375rem; line-height: 1.5; max-width: 36ch; color: #fff; }
+.kst-link { display: inline-flex; align-items: center; gap: 10px; white-space: nowrap; min-height: 48px; margin-top: 16px; padding: .7rem 1.1rem; border: 1.5px solid rgba(255, 255, 255, .75); border-radius: var(--radius); color: #fff; font-weight: 600; line-height: 1.2; text-decoration: none; transition: background-color .2s ease, color .2s ease, border-color .2s ease; }
+.kst-link .icon { width: 18px; height: 18px; }
+@media (hover: hover) { .kst-link:hover { background: #fff; border-color: #fff; color: var(--rot-tief); } }
+
+/* Zitatfeld: Schildweiß wie die Leistungs-Tafel */
+.kst-zitate { position: relative; display: flex; flex-direction: column; justify-content: center; padding: clamp(30px, 4vw, 60px) clamp(22px, 4.4vw, 68px) clamp(28px, 3.8vw, 56px); background: linear-gradient(180deg, #FFFFFD, var(--schild) 45%, #F0F0EC); color: var(--text); }
+.kst-stimme { --haenge: clamp(26px, 2.8vw, 42px); margin: 0; padding-left: var(--haenge); }
+.kst-stimme + .kst-stimme { margin-top: clamp(24px, 3vw, 40px); padding-top: clamp(24px, 3vw, 40px); border-top: 1px solid #DCDCD7; }
+.kst-stimme blockquote { margin: 0; font-size: clamp(1.25rem, .95rem + 1.1vw, 1.75rem); line-height: 1.42; letter-spacing: -.004em; color: var(--text); }
+.kst-stimme blockquote p { position: relative; text-wrap: balance; }
+.kst-zus { white-space: nowrap; } /* der Strich im Zitat bleibt beim Folgewort, keine Zeile endet auf „-“ */
+.kst-stimme blockquote p::before { content: "„"; display: inline-block; width: var(--haenge); margin-left: calc(-1 * var(--haenge)); padding-right: .18em; text-align: right; font: 800 1.3em/0 var(--schild-schrift); color: var(--rot); }
+.kst-stimme blockquote p::after { content: "“"; color: var(--rot); font: 800 1.25em/0 var(--schild-schrift); margin-left: .05em; }
+.kst-stimme figcaption { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 14px; margin-top: clamp(14px, 1.6vw, 20px); font-size: .9375rem; line-height: 1.3; color: var(--text-2); }
+.kst-fuenf { display: inline-flex; gap: 3px; }
+.kst-fuenf svg { width: 17px; height: 17px; fill: var(--rot); }
+.kst-name { font-weight: 600; font-size: 1rem; color: var(--text); }
+
+/* Lampenlicht: auf dem Schildweiß warm (multiply), auf dem Rot ein heller Schein oben; geschlossen liegt die Tafel im Schatten */
+.kst-wertung::before, .kst-zitate::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .9s ease-out; }
+.kst-zitate::before { mix-blend-mode: multiply;
+  background: radial-gradient(ellipse 34% 70% at 22% 0%, rgb(var(--licht) / .95), rgb(var(--licht) / 0) 72%), radial-gradient(ellipse 34% 70% at 74% 0%, rgb(var(--licht) / .9), rgb(var(--licht) / 0) 72%); }
+.kst-wertung::before { mix-blend-mode: screen; background: radial-gradient(ellipse 70% 42% at 50% 0%, rgb(255 205 150 / .2), rgb(255 205 150 / 0) 74%); }
+.kst-wertung::after, .kst-zitate::after { content: ""; position: absolute; inset: 0; pointer-events: none; transition: opacity .9s ease-out; }
+.kst-zitate::after { background: rgba(46, 48, 52, .08); }
+.kst-wertung::after { background: rgba(20, 21, 23, .14); }
+.ist-offen .kst-wertung::before, .ist-offen .kst-zitate::before { opacity: .9; }
+.ist-offen .kst-wertung::after, .ist-offen .kst-zitate::after { opacity: 0; }
+.kst-wertung > *, .kst-zitate > * { position: relative; z-index: 1; }
+
+@media (min-width: 700px) and (max-width: 1023px) {
+  .kst { grid-template-columns: minmax(0, 1fr); }
+  .kst-wertung { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); grid-template-areas: "titel zahl" "fuss zahl"; column-gap: 32px; align-items: start; }
+  .kst-wertung h2 { grid-area: titel; }
+  .kst-zahlblock { grid-area: zahl; align-self: center; margin: 0; padding-top: 0; }
+  .kst-fuss { grid-area: fuss; align-self: end; }
+}
+@media (max-width: 699px) {
+  .kst { grid-template-columns: minmax(0, 1fr); }
+  .kst-fuss p { max-width: none; }
+}
+@media (max-width: 359px) { .kst-link { font-size: .9375rem; padding-inline: .8rem; } .kst-link .icon { display: none; } }
+
+/* Mit Bewegung: die Tafel setzt sich, die Sterne füllen sich, bei geöffnetem Laden springt das Licht an */
+@media (prefers-reduced-motion: no-preference) {
+  .bewegt .kst { transition: transform .9s var(--raus); }
+  .bewegt .kst:not(.an) { transform: translateY(28px); }
+  .bewegt .kst-stimme { transition: opacity .6s ease-out .3s, transform .8s var(--raus) .3s; }
+  .bewegt .kst-stimme + .kst-stimme { transition-delay: .45s; }
+  .bewegt .kst:not(.an) .kst-stimme { opacity: 0; transform: translateY(16px); }
+  .bewegt .kst-sterne-voll { transition: width 1s cubic-bezier(.5, 0, .2, 1) .3s; }
+  .bewegt .kst:not(.an) .kst-sterne-voll { width: 0; }
+  .bewegt.ist-offen .kst.an .kst-wertung::before { animation: anglimmen .9s var(--raus) .45s backwards; }
+  .bewegt.ist-offen .kst.an .kst-zitate::before { animation: anglimmen .9s var(--raus) .6s backwards; }
+}
+.kst-wertung::before, .kst-zitate::before { transform-origin: 50% 0; }
+@keyframes anglimmen { from { opacity: 0; transform: scaleY(.45); } to { opacity: .9; transform: scaleY(1); } }
+@media print { .kst-stimme { opacity: 1 !important; transform: none !important; } .kst-sterne-voll { width: calc(4 * (var(--s) + var(--g)) + .6 * var(--s)) !important; } }
+
+/* ---------- Fragen ---------- */
+.fragen { background: var(--hell); padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid #E2E2DD; }
+.fragen-raster { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: clamp(24px, 5vw, 80px); align-items: start; }
+.fragen h2 { font-family: var(--schild-schrift); font-weight: 700; font-size: clamp(2rem, 4.2vw, 3.25rem); line-height: 1.02; letter-spacing: -.012em; }
+.fragen-liste { border-bottom: 1px solid #D6D6D1; }
+.frage { border-top: 1px solid #D6D6D1; }
+.frage summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; padding: 20px 0; font-weight: 600; font-size: clamp(1.125rem, 1.6vw, 1.3125rem); line-height: 1.35; }
+.frage summary::-webkit-details-marker { display: none; }
+.frage summary::after { content: ""; flex: none; width: 22px; height: 22px; margin-top: 3px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22 22'%3E%3Cpath d='M11 3v16M3 11h16' stroke='%23D02C24' stroke-width='2.4'/%3E%3C/svg%3E") no-repeat center; transition: transform .3s var(--raus); }
+.frage[open] summary::after { transform: rotate(45deg); }
+.antwort { padding: 0 0 24px; color: var(--text-2); max-width: 64ch; }
+@media (hover: hover) { .frage summary:hover { color: var(--rot-tief); } }
+@media (min-width: 1024px) { .fragen h2 { position: sticky; top: calc(var(--kopf-h) + 32px); } }
+@media (max-width: 1023px) { .fragen-raster { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Fuß ---------- */
+.fuss { background: var(--klinker); color: var(--auf-dunkel-2); padding: 40px 0 calc(32px + env(safe-area-inset-bottom)); font-size: .9375rem; }
+.fuss .rahmen { display: flex; flex-wrap: wrap; gap: 14px 40px; justify-content: space-between; align-items: center; }
+.fuss-marke { display: flex; align-items: center; gap: 12px; color: var(--auf-dunkel); }
+.fuss-marke svg { width: 40px; }
+.fuss nav { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.fuss a { color: var(--auf-dunkel); text-decoration: none; }
+@media (hover: hover) { .fuss a:hover { text-decoration: underline; } }
+.fuss .bildnachweis { flex-basis: 100%; }
+
+/* ---------- Leiste unten am Handy ---------- */
+.leiste { display: none; }
+@media (max-width: 699px) {
+  .leiste { display: grid; grid-template-columns: 1.35fr 1fr; gap: 8px; position: fixed; inset: auto 0 0; z-index: 45; padding: 8px 10px calc(8px + env(safe-area-inset-bottom)); background: rgba(34, 35, 37, .96); box-shadow: 0 -8px 20px -10px rgba(0, 0, 0, .6); transform: translateY(0); transition: transform .3s var(--raus); }
+  .js .leiste:not(.zeigen) { transform: translateY(110%); }
+  .leiste .knopf { min-height: 50px; padding-inline: 12px; }
+  .leiste .knopf-linie { border-color: rgba(241, 238, 233, .4); color: var(--auf-dunkel); }
+  .fuss { padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Locksmith",
+   "@id": "https://cesurd.github.io/laden-entwurf/#betrieb",
+   "name": "HDS-Schlüsseldienst GmbH",
+   "url": "https://cesurd.github.io/laden-entwurf/",
+   "image": "https://cesurd.github.io/laden-entwurf/assets/img/og.jpg",
+   "telephone": "+49 2131 792929",
+   "faxNumber": "+49 2131 792919",
+   "email": "info@hds-schluesseldienst.de",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Martinusstraße 45",
+    "postalCode": "41564",
+    "addressLocality": "Kaarst",
+    "addressCountry": "DE"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+     ],
+     "opens": "09:30",
+     "closes": "17:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Friday",
+     "opens": "09:30",
+     "closes": "15:00"
+    }
+   ]
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://cesurd.github.io/laden-entwurf/#seite",
+   "url": "https://cesurd.github.io/laden-entwurf/",
+   "name": "Schlüsseldienst in Kaarst | HdS Sicherheitsfachgeschäft",
+   "inLanguage": "de-DE",
+   "about": {
+    "@id": "https://cesurd.github.io/laden-entwurf/#betrieb"
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://cesurd.github.io/laden-entwurf/#fragen",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Wo finde ich Ihren Laden?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "An der Martinusstraße 45 in 41564 Kaarst. Direkt am Laden gibt es Parkplätze für Kunden."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Wann haben Sie geöffnet?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Montag bis Donnerstag von 9:30 bis 17:00 Uhr, freitags von 9:30 bis 15:00 Uhr. Samstags und sonntags ist der Laden geschlossen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Kann ich bei Ihnen Schlüssel nachmachen lassen?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja, direkt im Laden. Für Schlüssel aus einer gesicherten Schließanlage ist meist die Sicherungskarte nötig. Bringen Sie sie bitte mit."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Was ist eine Schließanlage?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Bei einer Schließanlage sind Schlüssel und Zylinder so aufeinander abgestimmt, dass jeder Schlüssel genau die Türen öffnet, die er öffnen soll. Ein Hauptschlüssel kann zum Beispiel alle Türen schließen, ein Wohnungsschlüssel nur die eigene Wohnung, den Keller und die Haustür."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Kommen Sie auch zu mir?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Auf Wunsch sehen wir uns Ihr Haus oder Ihren Betrieb vor Ort an und beraten Sie unverbindlich. Für Einbau und Montage kommen unsere Monteure zu Ihnen."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Machen Sie auch Schilder?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ja. Schilder und Sicherheitskennzeichnungen für Gebäude und Objekte gehören zu unserem Angebot. Rufen Sie an und sagen Sie uns, was Sie brauchen."
+     }
+    }
+   ]
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<a class="sprung" href="#inhalt">Zum Inhalt springen</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="dach" viewBox="0 0 100 56"><path d="M5 53 50 8l45 45" fill="none" stroke="#2A2B2D" stroke-width="7.5" stroke-linejoin="miter" stroke-miterlimit="10"/><path d="M27 53 50 30l23 23Z" fill="#D02C24"/></symbol>
+  <symbol id="dach-hell" viewBox="0 0 100 56"><path d="M5 53 50 8l45 45" fill="none" stroke="#F1EEE9" stroke-width="7.5" stroke-linejoin="miter" stroke-miterlimit="10"/><path d="M27 53 50 30l23 23Z" fill="#D02C24"/></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M5.5 3.5h3l1.6 4.2-2 1.4a11 11 0 0 0 6.8 6.8l1.4-2 4.2 1.6v3a2 2 0 0 1-2.2 2A17 17 0 0 1 3.5 5.7a2 2 0 0 1 2-2.2Z"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+  <symbol id="dach-weiss" viewBox="0 0 100 56"><path d="M5 53 50 8l45 45" fill="none" stroke="#fff" stroke-width="7.5" stroke-linejoin="miter" stroke-miterlimit="10"/><path d="M27 53 50 30l23 23Z" fill="#fff" fill-opacity=".85"/></symbol>
+  <symbol id="i-tippen" viewBox="0 0 24 24"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V11m0-1.5a1.5 1.5 0 0 1 3 0V12m0-1a1.5 1.5 0 0 1 3 0v3.5A6.5 6.5 0 0 1 11.5 21H11a6 6 0 0 1-4.6-2.2L3.8 15.6a1.5 1.5 0 0 1 2.3-1.9L9 16.5"/></symbol>
+  <symbol id="i-stern" viewBox="0 0 24 24"><path d="m12 2.6 2.9 6 6.5.8-4.8 4.5 1.2 6.5L12 17.2l-5.8 3.2 1.2-6.5-4.8-4.5 6.5-.8Z"/></symbol>
+</svg>
+
+<header class="kopf" id="kopf">
+  <div class="kopf-innen rahmen">
+    <a class="kopf-marke" href="./" aria-label="HdS Schlüsseldienst, zur Startseite"><svg viewBox="0 0 100 56" aria-hidden="true"><use href="#dach"/></svg><span class="kopf-hds">HdS</span></a>
+    <span class="kopf-titel"><span class="kopf-titel-text"><span class="zeile">Schlüsseldienst</span> <span class="zeile">in Kaarst</span></span></span>
+    <nav class="kopf-nav" aria-label="Seitenbereiche"><a href="#leistungen">Leistungen</a><a href="#schliessanlagen">Schließanlagen</a><a href="#laden">Der Laden</a><a href="#fragen">Fragen</a></nav>
+    <a class="kopf-tel nummer" href="tel:+492131792929"><span class="vorwahl">02131</span> <span class="ruf">79 29 29</span></a>
+  </div>
+</header>
+
+<main id="inhalt">
+  <section class="hero" aria-labelledby="titel">
+    <div class="hero-foto hero-wand" aria-hidden="true"></div>
+    <div class="hero-raum">
+      <div class="hero-oben rahmen">
+        <p class="status" data-status-ort="hero"><span class="lampe"></span><span data-status-text>Mo–Do 9:30–17:00, Fr 9:30–15:00</span></p>
+      </div>
+    </div>
+
+    <div class="schild" data-schild>
+      <div class="schild-fahrt">
+        <div class="schild-flaeche" aria-hidden="true"><div class="schild-schatten"></div><div class="schild-licht"></div></div>
+        <div class="schild-innen rahmen">
+          <h1 class="schild-titel" id="titel"><span class="zeile">Schlüsseldienst</span> <span class="zeile">in Kaarst</span></h1>
+          <a class="schild-tel nummer" href="tel:+492131792929" aria-label="Anrufen: 02131 79 29 29"><span class="vorwahl">02131</span> <span class="ruf">79 29 29</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-unten rahmen dunkel">
+      <p class="hero-zeile">Schließanlagen, Schlösser, Zylinder und Schlüssel aus dem Fachgeschäft an der Martinusstraße. Für Beratung und Montage kommen wir auch zu Ihnen.</p>
+      <div class="knoepfe">
+        <a class="knopf knopf-rot" href="tel:+492131792929"><svg class="icon" aria-hidden="true"><use href="#i-tel"/></svg><span class="nummer-text">02131 79 29 29</span></a>
+        <a class="knopf knopf-linie" href="https://www.google.com/maps/dir/?api=1&amp;destination=HDS+Schl%C3%BCsseldienst+GmbH%2C+Martinusstra%C3%9Fe+45%2C+41564+Kaarst" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg>Route zum Laden</a>
+      </div>
+      <ul class="fakten">
+        <li><a href="#stimmen"><svg class="stern" aria-hidden="true"><use href="#i-stern"/></svg>4,6 bei Google</a></li>
+        <li><span class="p-zeichen" aria-hidden="true">P</span>Kundenparkplätze am Laden</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="leistungen" id="leistungen" aria-labelledby="leistungen-titel">
+    <div class="rahmen">
+      <div class="tafel">
+        <div class="tafel-kopf">
+          <div class="tafel-marke" aria-hidden="true"><svg viewBox="0 0 100 56"><use href="#dach"/></svg><span>HdS Schlüsseldienst GmbH</span></div>
+          <h2 id="leistungen-titel">Unsere Dienstleistungen</h2>
+          <p class="tafel-zeile">Wie auf der Tafel an unserem Laden: alles aus dem Fachgeschäft an der Martinusstraße in Kaarst.</p>
+        </div>
+        <ul class="tafel-liste">
+          <li><h3>Schließanlagen</h3><p>Ein Schlüssel für genau die Türen, die er öffnen soll. Wir planen Schließanlagen für Wohnhäuser, Betriebe und Hausverwaltungen und erweitern bestehende Anlagen. Den Einbau übernehmen unsere Monteure.</p><a href="#schliessanlagen">So funktioniert eine Schließanlage</a></li>
+          <li><h3>Schlösser und Zylinder</h3><p>Schließzylinder und Schlösser für Haus-, Wohnungs- und Bürotüren. Wir klären mit Ihnen, was zu Ihrer Tür passt, und unsere Monteure bauen es ein.</p></li>
+          <li><h3>Schlüssel</h3><p>Schlüssel nachmachen lassen, direkt im Laden. Für Schlüssel aus einer gesicherten Schließanlage bringen Sie bitte die Sicherungskarte mit.</p></li>
+          <li><h3>Gebäudeabsicherung</h3><p>Auf Wunsch sehen wir uns Ihr Haus oder Ihren Betrieb vor Ort an und beraten Sie unverbindlich, wie Türen und Zugänge besser gesichert werden. Die Montage machen unsere Monteure.</p></li>
+          <li><h3>Schilder und Kennzeichnungen</h3><p>Schilder und Sicherheitskennzeichnungen für Gebäude und Objekte. Sagen Sie uns, was Sie brauchen.</p></li>
+          <li class="tafel-ruf"><p class="tafel-ruf-frage">Lieber persönlich?</p><a class="nummer tafel-ruf-nummer" href="tel:+492131792929"><span class="vorwahl">02131</span> <span class="ruf">79 29 29</span></a><p>Mo–Do 9:30–17:00, Fr 9:30–15:00</p></li>
+        </ul>
+        <p class="tafel-marken"><span>Marken am Laden</span> <b>KESO</b> <b>ASSA ABLOY</b> <b>DOM</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="vergleich" id="unterschied" aria-labelledby="vergleich-titel">
+    <div class="rahmen">
+      <div class="vergleich-kopf">
+        <h2 id="vergleich-titel">Der Unterschied an Ihrer Tür</h2>
+        <p>Fünf Situationen aus dem Alltag: ohne Schlüsseldienst und mit HdS.</p>
+      </div>
+      <div class="vergleich-tafel" data-vergleich>
+        <table class="vergleich-tabelle">
+          <caption class="sr">Gegenüberstellung von fünf Situationen ohne Schlüsseldienst und mit HdS</caption>
+          <colgroup><col class="sp-lage"><col class="sp-ohne"><col class="sp-mit"></colgroup>
+          <thead><tr><td class="leer"></td><th scope="col" class="ohne">Ohne Schlüsseldienst</th><th scope="col" class="mit">Mit HdS</th></tr></thead>
+          <tbody>
+            <tr>
+              <th scope="row">Schlüssel verloren</th>
+              <td class="ohne"><span class="vergleich-etikett">Ohne Schlüsseldienst</span>Sie hoffen, dass der Schlüssel wieder auftaucht. Das Schloss bleibt, wie es ist.</td>
+              <td class="mit"><span class="vergleich-etikett">Mit HdS</span>Wir tauschen den Zylinder. Der verlorene Schlüssel öffnet damit nichts mehr.</td>
+            </tr>
+            <tr>
+              <th scope="row">Mieter oder Mitarbeiter wechseln</th>
+              <td class="ohne"><span class="vergleich-etikett">Ohne Schlüsseldienst</span>Alte Schlüssel bleiben im Umlauf, niemand weiß genau, wie viele.</td>
+              <td class="mit"><span class="vergleich-etikett">Mit HdS</span>Neue Zylinder oder eine Schließanlage: Sie wissen, wer welchen Schlüssel hat.</td>
+            </tr>
+            <tr>
+              <th scope="row">Schlüssel nachmachen</th>
+              <td class="ohne"><span class="vergleich-etikett">Ohne Schlüsseldienst</span>Ein einfacher Schlüssel lässt sich fast überall kopieren.</td>
+              <td class="mit"><span class="vergleich-etikett">Mit HdS</span>Bei einer gesicherten Schließanlage gibt es Nachschlüssel nur gegen die Sicherungskarte.</td>
+            </tr>
+            <tr>
+              <th scope="row">Viele Türen</th>
+              <td class="ohne"><span class="vergleich-etikett">Ohne Schlüsseldienst</span>Für jede Tür ein eigener Schlüssel am Bund.</td>
+              <td class="mit"><span class="vergleich-etikett">Mit HdS</span>Ein Schlüssel für genau die Türen, die er öffnen soll. <a href="#schliessanlagen">So funktioniert’s</a></td>
+            </tr>
+            <tr>
+              <th scope="row">Haustür absichern</th>
+              <td class="ohne"><span class="vergleich-etikett">Ohne Schlüsseldienst</span>Sie raten, welches Schloss und welcher Beschlag passen.</td>
+              <td class="mit"><span class="vergleich-etikett">Mit HdS</span>Wir sehen uns die Tür vor Ort an und beraten Sie unverbindlich. Unsere Monteure bauen ein.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="plan-abschnitt" id="schliessanlagen" aria-labelledby="plan-titel">
+    <div class="rahmen plan-raster">
+      <div class="plan-kopf">
+        <h2 id="plan-titel">Schließanlagen: ein Schlüssel, die richtigen Türen</h2>
+        <p class="plan-vorspann">Mit einer Schließanlage legen Sie fest, wer welche Tür öffnet. Die Hausverwaltung kommt überall hinein, die Mieter nur in ihre Wohnung, in den Keller und durch die Haustür.</p>
+        <p class="plan-hinweis"><svg class="icon" aria-hidden="true"><use href="#i-tippen"/></svg>Tippen Sie im Beispielplan auf einen Schlüssel.</p>
+      </div>
+      <div class="plan-rest">
+        <dl class="arten">
+          <div><dt>Zentralschlossanlage</dt><dd>Jeder Schlüssel schließt die eigene Tür und dazu gemeinsame Türen wie Haustür und Keller.</dd></div>
+          <div><dt>Hauptschlüsselanlage</dt><dd>Ein Hauptschlüssel schließt alle Türen, jeder andere Schlüssel nur seine eigene.</dd></div>
+          <div><dt>Generalhauptschlüsselanlage</dt><dd>Gruppenschlüssel für einzelne Bereiche, darüber ein Generalhauptschlüssel für das ganze Haus.</dd></div>
+        </dl>
+        <div class="plan-ruf">
+          <p>Sie planen eine Anlage oder brauchen einen weiteren Schlüssel?</p>
+          <a class="knopf knopf-rot" href="tel:+492131792929"><svg class="icon" aria-hidden="true"><use href="#i-tel"/></svg><span class="nummer-text">02131 79 29 29</span></a>
+        </div>
+      </div>
+      <figure class="blatt">
+        <figcaption class="blatt-kopf"><svg viewBox="0 0 100 56" aria-hidden="true"><use href="#dach-weiss"/></svg><span>Schließplan</span><span class="blatt-art">Beispiel: Wohn- und Geschäftshaus</span></figcaption>
+        <div class="blatt-tabelle">
+          <table class="plan" data-plan>
+            <caption class="sr">Beispiel-Schließplan: welcher Schlüssel welche Tür schließt</caption>
+            <thead><tr><th scope="col" class="plan-ecke">Schlüssel</th><th scope="col" data-tuer="0"><span>Haustür</span></th><th scope="col" data-tuer="1"><span>Keller</span></th><th scope="col" data-tuer="2"><span>Technik</span></th><th scope="col" data-tuer="3"><span>Garage</span></th><th scope="col" data-tuer="4"><span>Büro</span></th><th scope="col" data-tuer="5"><span>Wohnung 1</span></th><th scope="col" data-tuer="6"><span>Wohnung 2</span></th></tr></thead>
+            <tbody>
+            <tr data-tueren="1111111" data-name="Generalhauptschlüssel"><th scope="row"><button type="button" class="plan-schluessel" aria-pressed="false">Generalhaupt&shy;schlüssel</button></th><td class="x" style="--i: 0"><span class="sr">schließt</span></td><td class="x" style="--i: 1"><span class="sr">schließt</span></td><td class="x" style="--i: 2"><span class="sr">schließt</span></td><td class="x" style="--i: 3"><span class="sr">schließt</span></td><td class="x" style="--i: 4"><span class="sr">schließt</span></td><td class="x" style="--i: 5"><span class="sr">schließt</span></td><td class="x" style="--i: 6"><span class="sr">schließt</span></td></tr>
+            <tr data-tueren="1111000" data-name="Hausmeister"><th scope="row"><button type="button" class="plan-schluessel" aria-pressed="false">Hausmeister</button></th><td class="x" style="--i: 0"><span class="sr">schließt</span></td><td class="x" style="--i: 1"><span class="sr">schließt</span></td><td class="x" style="--i: 2"><span class="sr">schließt</span></td><td class="x" style="--i: 3"><span class="sr">schließt</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td></tr>
+            <tr data-tueren="1000100" data-name="Büro"><th scope="row"><button type="button" class="plan-schluessel" aria-pressed="false">Büro</button></th><td class="x" style="--i: 0"><span class="sr">schließt</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td><td class="x" style="--i: 1"><span class="sr">schließt</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td></tr>
+            <tr data-tueren="1100010" data-name="Wohnung 1"><th scope="row"><button type="button" class="plan-schluessel" aria-pressed="false">Wohnung 1</button></th><td class="x" style="--i: 0"><span class="sr">schließt</span></td><td class="x" style="--i: 1"><span class="sr">schließt</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td><td class="x" style="--i: 2"><span class="sr">schließt</span></td><td><span class="sr">nein</span></td></tr>
+            <tr data-tueren="1100001" data-name="Wohnung 2"><th scope="row"><button type="button" class="plan-schluessel" aria-pressed="false">Wohnung 2</button></th><td class="x" style="--i: 0"><span class="sr">schließt</span></td><td class="x" style="--i: 1"><span class="sr">schließt</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td><td><span class="sr">nein</span></td><td class="x" style="--i: 2"><span class="sr">schließt</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="plan-ergebnis" aria-live="polite" data-plan-ergebnis>Der Generalhauptschlüssel schließt alle Türen, die anderen Schlüssel nur einen Teil davon.</p>
+      </figure>
+    </div>
+  </section>
+
+  <section class="laden" id="laden" aria-labelledby="laden-titel">
+    <div class="laden-band">
+      <div class="rahmen">
+        <h2 id="laden-titel">Der Laden an der Martinusstraße</h2>
+        <p>Schlüssel, Schlösser und Zylinder bekommen Sie hier über die Theke. Für Ihre Schließanlage nehmen wir uns Zeit. Kundenparkplätze gibt es direkt am Laden.</p>
+      </div>
+    </div>
+
+    <div class="laden-raster rahmen">
+      <div class="zeiten" id="zeiten">
+        <h3>Öffnungszeiten</h3>
+        <p class="zeiten-status" data-status-ort="laden"><span class="lampe"></span><span data-status-text>Montag bis Freitag ab 9:30 Uhr</span></p>
+        <table>
+          <tbody>
+            <tr data-tage="1 2 3 4"><th scope="row">Montag bis Donnerstag</th><td>9:30–17:00 Uhr</td></tr>
+            <tr data-tage="5"><th scope="row">Freitag</th><td>9:30–15:00 Uhr</td></tr>
+            <tr data-tage="6 0"><th scope="row">Samstag und Sonntag</th><td>geschlossen</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="anschrift" id="kontakt">
+        <h3>Anschrift und Kontakt</h3>
+        <address>HDS-Schlüsseldienst GmbH<br>Martinusstraße 45<br>41564 Kaarst</address>
+        <p class="kontakt-zeilen">Telefon <a href="tel:+492131792929">02131 79 29 29</a><br>Fax 02131 79 29 19<br>E-Mail <a href="mailto:info@hds-schluesseldienst.de">info@hds-schluesseldienst.de</a></p>
+        <div class="knoepfe">
+          <a class="knopf knopf-rot" href="tel:+492131792929"><svg class="icon" aria-hidden="true"><use href="#i-tel"/></svg><span class="nummer-text">02131 79 29 29</span></a>
+          <a class="knopf knopf-dunkel" href="https://www.google.com/maps/dir/?api=1&amp;destination=HDS+Schl%C3%BCsseldienst+GmbH%2C+Martinusstra%C3%9Fe+45%2C+41564+Kaarst" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg>Route</a>
+        </div>
+        <p class="zweiter">Zweiter Laden: Düsseldorfer Str. 45, 40667 Meerbusch</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="stimmen dunkel" id="stimmen" aria-labelledby="stimmen-titel">
+    <div class="rahmen">
+      <div class="kst" data-stimmen>
+        <div class="kst-wertung">
+          <h2 id="stimmen-titel">Was Kunden schreiben</h2>
+          <div class="kst-zahlblock">
+            <p class="kst-zahl"><span class="kst-ziffer">4,6</span> <span class="kst-von"><span class="kst-sterne" aria-hidden="true"><span class="kst-sterne-grund"><svg><use href="#i-stern"/></svg><svg><use href="#i-stern"/></svg><svg><use href="#i-stern"/></svg><svg><use href="#i-stern"/></svg><svg><use href="#i-stern"/></svg></span><span class="kst-sterne-voll"><svg><use href="#i-stern"/></svg><svg><use href="#i-stern"/></svg><svg><use href="#i-stern"/></svg><svg><use href="#i-stern"/></svg><svg><use href="#i-stern"/></svg></span></span>von 5 Sternen <span>im Google-Profil</span></span></p>
+          </div>
+          <div class="kst-fuss">
+            <p>Rezensionen im Wortlaut. Wir prüfen die Echtheit der Bewertungen nicht.</p>
+            <a class="kst-link" href="https://www.google.com/maps/search/?api=1&amp;query=HDS+Schl%C3%BCsseldienst+GmbH+Martinusstra%C3%9Fe+45+Kaarst" target="_blank" rel="noopener">Alle Rezensionen bei Google<svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          </div>
+        </div>
+        <div class="kst-zitate">
+          <figure class="kst-stimme">
+            <blockquote><p>Sehr hilfsbereit und freundlich bei einem verlorengegangenen <span class="kst-zus">Schlüssel - Ausführung</span> schnell und preislich sehr fair. Danke.</p></blockquote>
+            <figcaption><span class="kst-fuenf" role="img" aria-label="5 von 5 Sternen"><svg aria-hidden="true"><use href="#i-stern"/></svg><svg aria-hidden="true"><use href="#i-stern"/></svg><svg aria-hidden="true"><use href="#i-stern"/></svg><svg aria-hidden="true"><use href="#i-stern"/></svg><svg aria-hidden="true"><use href="#i-stern"/></svg></span><span class="kst-name">J. Michael</span><span>Google-Rezension, 2026</span></figcaption>
+          </figure>
+          <figure class="kst-stimme">
+            <blockquote><p>Sehr zu empfehlen, super freundlicher Service, Schlüssel passen perfekt, gerne wieder</p></blockquote>
+            <figcaption><span class="kst-fuenf" role="img" aria-label="5 von 5 Sternen"><svg aria-hidden="true"><use href="#i-stern"/></svg><svg aria-hidden="true"><use href="#i-stern"/></svg><svg aria-hidden="true"><use href="#i-stern"/></svg><svg aria-hidden="true"><use href="#i-stern"/></svg><svg aria-hidden="true"><use href="#i-stern"/></svg></span><span class="kst-name">Pauline</span><span>Google-Rezension, 2026</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fragen" id="fragen" aria-labelledby="fragen-titel">
+    <div class="rahmen fragen-raster">
+      <h2 id="fragen-titel">Häufige Fragen</h2>
+      <div class="fragen-liste">
+        <details class="frage" open>
+          <summary>Wo finde ich Ihren Laden?</summary>
+          <p class="antwort">An der Martinusstraße 45 in 41564 Kaarst. Direkt am Laden gibt es Parkplätze für Kunden.</p>
+        </details>
+        <details class="frage">
+          <summary>Wann haben Sie geöffnet?</summary>
+          <p class="antwort">Montag bis Donnerstag von 9:30 bis 17:00 Uhr, freitags von 9:30 bis 15:00 Uhr. Samstags und sonntags ist der Laden geschlossen.</p>
+        </details>
+        <details class="frage">
+          <summary>Kann ich bei Ihnen Schlüssel nachmachen lassen?</summary>
+          <p class="antwort">Ja, direkt im Laden. Für Schlüssel aus einer gesicherten Schließanlage ist meist die Sicherungskarte nötig. Bringen Sie sie bitte mit.</p>
+        </details>
+        <details class="frage">
+          <summary>Was ist eine Schließanlage?</summary>
+          <p class="antwort">Bei einer Schließanlage sind Schlüssel und Zylinder so aufeinander abgestimmt, dass jeder Schlüssel genau die Türen öffnet, die er öffnen soll. Ein Hauptschlüssel kann zum Beispiel alle Türen schließen, ein Wohnungsschlüssel nur die eigene Wohnung, den Keller und die Haustür.</p>
+        </details>
+        <details class="frage">
+          <summary>Kommen Sie auch zu mir?</summary>
+          <p class="antwort">Ja. Auf Wunsch sehen wir uns Ihr Haus oder Ihren Betrieb vor Ort an und beraten Sie unverbindlich. Für Einbau und Montage kommen unsere Monteure zu Ihnen.</p>
+        </details>
+        <details class="frage">
+          <summary>Machen Sie auch Schilder?</summary>
+          <p class="antwort">Ja. Schilder und Sicherheitskennzeichnungen für Gebäude und Objekte gehören zu unserem Angebot. Rufen Sie an und sagen Sie uns, was Sie brauchen.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="fuss dunkel">
+  <div class="rahmen">
+    <div class="fuss-marke"><svg viewBox="0 0 100 56" aria-hidden="true"><use href="#dach-hell"/></svg><span>HDS-Schlüsseldienst GmbH · Martinusstraße 45 · 41564 Kaarst</span></div>
+    <nav aria-label="Rechtliches"><a href="#kontakt">Kontakt</a><a href="impressum/">Impressum</a><a href="datenschutz/">Datenschutz</a></nav>
+  </div>
+</footer>
+
+<nav class="leiste dunkel" aria-label="Schnellkontakt">
+  <a class="knopf knopf-rot" href="tel:+492131792929"><svg class="icon" aria-hidden="true"><use href="#i-tel"/></svg><span class="nummer-text">02131 79 29 29</span></a>
+  <a class="knopf knopf-linie" href="https://www.google.com/maps/dir/?api=1&amp;destination=HDS+Schl%C3%BCsseldienst+GmbH%2C+Martinusstra%C3%9Fe+45%2C+41564+Kaarst" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-route"/></svg>Route</a>
+</nav>
+
+<script>
+(function () {
+  'use strict';
+  var html = document.documentElement;
+
+  /* ---------- Ladenstatus: Profilzeiten, Feiertage NRW, Zeitzone Berlin ---------- */
+  var ZEITEN = { 1: [570, 1020], 2: [570, 1020], 3: [570, 1020], 4: [570, 1020], 5: [570, 900] };
+  var TAGE = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+  function ostern(j) {
+    var a = j % 19, b = Math.floor(j / 100), c = j % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25),
+      g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4,
+      l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451), n = h + l - 7 * m + 114;
+    return Date.UTC(j, Math.floor(n / 31) - 1, (n % 31) + 1);
+  }
+  function feiertag(t) {
+    var d = new Date(t), md = d.toISOString().slice(5, 10);
+    if (['01-01', '05-01', '10-03', '11-01', '12-25', '12-26'].indexOf(md) > -1) return true;
+    var o = ostern(d.getUTCFullYear());
+    return [-2, 1, 39, 50, 60].some(function (x) { return o + x * 864e5 === t; });
+  }
+  function jetzt() {
+    var p = {};
+    new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
+      .formatToParts(new Date()).forEach(function (x) { p[x.type] = +x.value; });
+    return { tag: Date.UTC(p.year, p.month - 1, p.day), min: p.hour * 60 + p.minute };
+  }
+  function uhr(m) { return Math.floor(m / 60) + ':' + ('0' + (m % 60)).slice(-2); }
+  function zeitenAm(t) { return feiertag(t) ? null : ZEITEN[new Date(t).getUTCDay()] || null; }
+  function status() {
+    var n = jetzt(), z = zeitenAm(n.tag), heuteFrei = !z && ZEITEN[new Date(n.tag).getUTCDay()];
+    if (z && n.min >= z[0] && n.min < z[1]) return { offen: true, kurz: 'Geöffnet bis ' + uhr(z[1]) + ' Uhr', lang: 'Jetzt geöffnet, heute bis ' + uhr(z[1]) + ' Uhr', kopf: 'bis ' + uhr(z[1]) };
+    if (z && n.min < z[0]) return { offen: false, kurz: 'Öffnet heute um ' + uhr(z[0]) + ' Uhr', lang: 'Noch geschlossen, öffnet heute um ' + uhr(z[0]) + ' Uhr', kopf: 'ab ' + uhr(z[0]) };
+    for (var i = 1; i < 12; i++) {
+      var t = n.tag + i * 864e5, zz = zeitenAm(t);
+      if (zz) {
+        var wann = i === 1 ? 'morgen' : TAGE[new Date(t).getUTCDay()];
+        return { offen: false, kurz: 'Öffnet ' + wann + ' um ' + uhr(zz[0]) + ' Uhr', lang: (heuteFrei ? 'Heute Feiertag. ' : 'Jetzt geschlossen. ') + 'Wir öffnen ' + wann + ' um ' + uhr(zz[0]) + ' Uhr', kopf: (i === 1 ? 'morgen' : TAGE[new Date(t).getUTCDay()].slice(0, 2) + '.') + ' ' + uhr(zz[0]) };
+      }
+    }
+    return null;
+  }
+  function statusZeigen() {
+    var s = status(); if (!s) return;
+    html.classList.toggle('ist-offen', s.offen);
+    document.querySelectorAll('[data-status-ort]').forEach(function (el) {
+      var ort = el.getAttribute('data-status-ort'), txt = el.querySelector('[data-status-text]');
+      if (txt) txt.textContent = ort === 'laden' ? s.lang : ort === 'kopf' ? s.kopf : s.kurz;
+    });
+    var tag = new Date(jetzt().tag).getUTCDay();
+    document.querySelectorAll('[data-tage]').forEach(function (tr) {
+      tr.classList.toggle('heute', tr.getAttribute('data-tage').split(' ').indexOf(String(tag)) > -1);
+    });
+  }
+  statusZeigen();
+  setInterval(statusZeigen, 60000);
+
+  /* ---------- Leiste unten (Handy): erst nach den Hero-Knöpfen ---------- */
+  var leiste = document.querySelector('.leiste'), heroKnoepfe = document.querySelector('.hero .knoepfe');
+  if (leiste && heroKnoepfe && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (e) {
+      var r = e[0].boundingClientRect;
+      leiste.classList.toggle('zeigen', !e[0].isIntersecting && r.bottom < 0);
+    }).observe(heroKnoepfe);
+  } else if (leiste) { leiste.classList.add('zeigen'); }
+
+  /* ---------- Gegenüberstellung: Marken setzen sich beim Hineinscrollen ---------- */
+  var vergleich = document.querySelector('[data-vergleich]');
+  if (vergleich) {
+    if (html.classList.contains('bewegt') && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (e, o) { if (e[0].isIntersecting) { vergleich.classList.add('an'); o.disconnect(); } }, { threshold: .35 }).observe(vergleich);
+    } else { vergleich.classList.add('an'); }
+  }
+
+  /* ---------- Schließplan: Schlüssel antippen, Türen leuchten ---------- */
+  var plan = document.querySelector('[data-plan]');
+  if (plan) {
+    var tuerKoepfe = plan.querySelectorAll('thead th[data-tuer]'), planZeilen = plan.querySelectorAll('tbody tr'),
+      planErgebnis = document.querySelector('[data-plan-ergebnis]');
+    var aufzaehlen = function (a) { return a.length < 2 ? a.join('') : a.slice(0, -1).join(', ') + ' und ' + a[a.length - 1]; };
+    var waehlen = function (tr, stempeln) {
+      plan.classList.add('hat-wahl');
+      planZeilen.forEach(function (z) { z.classList.toggle('gewaehlt', z === tr); z.querySelector('button').setAttribute('aria-pressed', z === tr ? 'true' : 'false'); });
+      var bits = tr.getAttribute('data-tueren'), offen = [];
+      tuerKoepfe.forEach(function (th, i) { var an = bits.charAt(i) === '1'; th.classList.toggle('an', an); if (an) offen.push(th.textContent.trim()); });
+      var name = tr.getAttribute('data-name');
+      var zahl = ['null', 'eine', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun'][offen.length] || offen.length;
+      planErgebnis.textContent = offen.length === tuerKoepfe.length ? 'Der ' + name + ' schließt alle ' + zahl + ' Türen.' : 'Der Schlüssel „' + name + '“ schließt ' + aufzaehlen(offen) + '.';
+      if (stempeln) { plan.classList.remove('stempeln'); void plan.offsetWidth; plan.classList.add('stempeln'); }
+    };
+    planZeilen.forEach(function (tr) { tr.querySelector('button').addEventListener('click', function () { waehlen(tr, true); }); });
+    if (html.classList.contains('bewegt') && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (e, o) { if (e[0].isIntersecting) { waehlen(planZeilen[0], true); o.disconnect(); } }, { threshold: .4 }).observe(plan);
+    } else { waehlen(planZeilen[0], false); }
+  }
+
+  /* ---------- Stimmen: Tafel setzt sich, Sterne füllen sich, Licht springt an ---------- */
+  var stimmTafel = document.querySelector('[data-stimmen]');
+  if (stimmTafel) {
+    if (html.classList.contains('bewegt') && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (e, o) { if (e[0].isIntersecting) { stimmTafel.classList.add('an'); o.disconnect(); } }, { threshold: .2 }).observe(stimmTafel);
+      window.addEventListener('load', function () { setTimeout(function () { if (!stimmTafel.classList.contains('an') && stimmTafel.getBoundingClientRect().top < innerHeight) stimmTafel.classList.add('an'); }, 2500); });
+    } else { stimmTafel.classList.add('an'); }
+  }
+
+  /* ---------- Das Schild wird zur Kopfzeile ---------- */
+  if (!html.classList.contains('bewegt')) return;
+  var schild = document.querySelector('[data-schild]'), flaeche = schild.querySelector('.schild-flaeche'),
+    innen = schild.querySelector('.schild-innen'), titel = schild.querySelector('.schild-titel'), tel = schild.querySelector('.schild-tel'),
+    foto = document.querySelector('.hero-foto'), kopf = document.getElementById('kopf'), kTitel = kopf.querySelector('.kopf-titel-text'), kTel = kopf.querySelector('.kopf-tel');
+  var m = null, offen = false, angedockt = null;
+
+  function messen() {
+    [schild, flaeche, innen, titel, tel, foto].forEach(function (el) { el.style.transform = ''; el.style.opacity = ''; });
+    var winkel = parseFloat(getComputedStyle(schild.closest('.hero')).getPropertyValue('--winkel')) || 0;
+    var oben = 0; for (var el = schild; el; el = el.offsetParent) oben += el.offsetTop;
+    var H0 = schild.offsetHeight, hK = kopf.offsetHeight;
+    function zeilen(el) { return Math.round(el.offsetHeight / (parseFloat(getComputedStyle(el).lineHeight) || 1)); }
+    var genau = kTitel.offsetWidth > 0 && kTel.offsetWidth > 0 && zeilen(titel) === zeilen(kTitel);
+    m = { winkel: winkel, oben: oben, H0: H0, hK: hK, genau: genau,
+      iY: (hK - H0) / 2,
+      tY: hK / 2 - (titel.offsetTop + titel.offsetHeight / 2),
+      pY: hK / 2 - (tel.offsetTop + tel.offsetHeight / 2) };
+    if (genau && kTitel.offsetWidth && kTel.offsetWidth) {
+      m.tX = kTitel.offsetLeft - titel.offsetLeft;
+      m.tY = (kTitel.offsetTop + kTitel.offsetHeight / 2) - (titel.offsetTop + titel.offsetHeight / 2);
+      m.tK = kTitel.offsetWidth / titel.offsetWidth;
+      m.pX = (kTel.offsetLeft + kTel.offsetWidth) - (tel.offsetLeft + tel.offsetWidth);
+      m.pY = (kTel.offsetTop + kTel.offsetHeight / 2) - (tel.offsetTop + tel.offsetHeight / 2);
+      m.pK = kTel.offsetWidth / tel.offsetWidth;
+    } else { m.genau = false; }
+    zeichnen();
+  }
+  function klemm(x) { return x < 0 ? 0 : x > 1 ? 1 : x; }
+  function glatt(a, b, x) { x = klemm((x - a) / (b - a)); return x * x * (3 - 2 * x); }
+  function zeichnen() {
+    offen = false;
+    if (!m) return;
+    var s = window.scrollY, p = m.oben > 0 ? klemm(s / m.oben) : 1, w = glatt(0, 1, p);
+    var andocken = s >= m.oben - .5;
+    if (andocken !== angedockt) {
+      angedockt = andocken;
+      kopf.classList.toggle('angedockt', andocken);
+      kopf.classList.toggle('weich', andocken && !m.genau);
+      schild.style.visibility = andocken ? 'hidden' : '';
+    }
+    schild.style.transform = 'rotate(' + (m.winkel * (1 - w)).toFixed(3) + 'deg)';
+    schild.style.setProperty('--lichtfall', (1 - glatt(0, .5, p)).toFixed(3));
+    flaeche.style.transform = 'scaleY(' + (1 + (m.hK / m.H0 - 1) * p).toFixed(4) + ')';
+    if (m.genau) {
+      titel.style.transform = 'translate(' + (m.tX * p).toFixed(2) + 'px,' + (m.tY * p).toFixed(2) + 'px) scale(' + (1 + (m.tK - 1) * p).toFixed(4) + ')';
+      tel.style.transform = 'translate(' + (m.pX * p).toFixed(2) + 'px,' + (m.pY * p).toFixed(2) + 'px) scale(' + (1 + (m.pK - 1) * p).toFixed(4) + ')';
+    } else {
+      // Schmale Schirme: Inhalt des Schilds bleibt ein Block, schrumpft zur Mitte und tritt zurück
+      innen.style.transformOrigin = '0 50%';
+      innen.style.transform = 'translateY(' + (m.iY * p).toFixed(2) + 'px) scale(' + (1 - .5 * w).toFixed(4) + ')';
+      innen.style.opacity = (1 - glatt(.35, .8, p)).toFixed(3);
+    }
+    // das Schild verlässt die Fassade: das Foto tritt zurück, damit unter der Kopfzeile kein Fotostreifen bleibt
+    foto.style.opacity = (1 - glatt(.7, 1, p)).toFixed(3);
+  }
+  function anfordern() { if (!offen) { offen = true; requestAnimationFrame(zeichnen); } }
+  window.addEventListener('scroll', anfordern, { passive: true });
+  var warte; window.addEventListener('resize', function () { clearTimeout(warte); warte = setTimeout(messen, 120); });
+  (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(function () {
+    // Einfahren abwarten, dann messen (die Fahrt verschiebt nur die innere Ebene, nicht das Layout)
+    messen();
+  });
+})();
+</script>
+</body>
+</html>

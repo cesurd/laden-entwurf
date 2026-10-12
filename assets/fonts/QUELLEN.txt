@@ -1,0 +1,17 @@
+Schriften von Google Fonts (fonts.googleapis.com, abgerufen 10.10.2026), SIL Open Font License 1.1.
+Fira Sans / Fira Sans Condensed (Carrois Apostrophe / Mozilla).
+
+fira-sans-400-latin-ext.woff2	https://fonts.gstatic.com/s/firasans/v18/va9E4kDNxMZdWfMOD5VvmYjLazX3dGTP.woff2
+fira-sans-400-latin.woff2	https://fonts.gstatic.com/s/firasans/v18/va9E4kDNxMZdWfMOD5Vvl4jLazX3dA.woff2
+fira-sans-500-latin-ext.woff2	https://fonts.gstatic.com/s/firasans/v18/va9B4kDNxMZdWfMOD5VnZKveSBf6Xl7Gl3LX.woff2
+fira-sans-500-latin.woff2	https://fonts.gstatic.com/s/firasans/v18/va9B4kDNxMZdWfMOD5VnZKveRhf6Xl7Glw.woff2
+fira-sans-600-latin-ext.woff2	https://fonts.gstatic.com/s/firasans/v18/va9B4kDNxMZdWfMOD5VnSKzeSBf6Xl7Gl3LX.woff2
+fira-sans-600-latin.woff2	https://fonts.gstatic.com/s/firasans/v18/va9B4kDNxMZdWfMOD5VnSKzeRhf6Xl7Glw.woff2
+fira-sans-condensed-500-latin-ext.woff2	https://fonts.gstatic.com/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMp0cjRYhY8XEA.woff2
+fira-sans-condensed-500-latin.woff2	https://fonts.gstatic.com/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMR0cjRYhY8.woff2
+fira-sans-condensed-600-latin-ext.woff2	https://fonts.gstatic.com/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWSnJuMp0cjRYhY8XEA.woff2
+fira-sans-condensed-600-latin.woff2	https://fonts.gstatic.com/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWSnJuMR0cjRYhY8.woff2
+fira-sans-condensed-700-latin-ext.woff2	https://fonts.gstatic.com/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMp0cjRYhY8XEA.woff2
+fira-sans-condensed-700-latin.woff2	https://fonts.gstatic.com/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMR0cjRYhY8.woff2
+fira-sans-condensed-800-latin-ext.woff2	https://fonts.gstatic.com/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWVHLuMp0cjRYhY8XEA.woff2
+fira-sans-condensed-800-latin.woff2	https://fonts.gstatic.com/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWVHLuMR0cjRYhY8.woff2
